@@ -1,0 +1,62 @@
+[
+  {
+    "career": "Data Analyst",
+    "skills": ["Excel", "SQL", "Python", "data visualization", "statistics"],
+    "courses": ["Data Analytics Fundamentals", "SQL for Data Science", "Power BI"],
+    "description": "Collects, cleans, and interprets data to support business decisions using dashboards and reports."
+  },
+  {
+    "career": "Machine Learning Engineer",
+    "skills": ["Python", "TensorFlow", "PyTorch", "math", "algorithms"],
+    "courses": ["Machine Learning Specialization", "Deep Learning", "MLOps Basics"],
+    "description": "Builds and deploys machine learning models into production systems."
+  },
+  {
+    "career": "UX/UI Designer",
+    "skills": ["Figma", "wireframing", "user research", "visual design"],
+    "courses": ["UX Design Fundamentals", "Human-Computer Interaction"],
+    "description": "Designs user-friendly interfaces and experiences for apps and websites."
+  },
+  {
+    "career": "Cybersecurity Analyst",
+    "skills": ["networking", "risk assessment", "Linux", "security tools"],
+    "courses": ["Network Security", "Ethical Hacking Basics", "CompTIA Security+"],
+    "description": "Monitors and protects systems from cyber threats and vulnerabilities."
+  },
+  {
+    "career": "Cloud Engineer",
+    "skills": ["AWS", "Azure", "Linux", "networking", "automation scripting"],
+    "courses": ["Cloud Foundations", "AWS Certified Solutions Architect"],
+    "description": "Designs, deploys, and manages cloud infrastructure and services."
+  },
+  {
+    "career": "Business Analyst",
+    "skills": ["communication", "requirements gathering", "Excel", "process mapping"],
+    "courses": ["Business Analysis Fundamentals", "Agile Project Management"],
+    "description": "Bridges business needs and technical solutions by analyzing processes and requirements."
+  },
+  {
+    "career": "Software Developer",
+    "skills": ["programming", "problem-solving", "Git", "databases"],
+    "courses": ["Full-Stack Web Development", "Data Structures & Algorithms"],
+    "description": "Designs, builds, and maintains software applications."
+  },
+  {
+    "career": "AI/NLP Researcher",
+    "skills": ["Python", "research writing", "statistics", "linguistics"],
+    "courses": ["Natural Language Processing", "Deep Learning for NLP"],
+    "description": "Researches and develops language-based AI systems and models."
+  },
+  {
+    "career": "Project Manager (IT)",
+    "skills": ["leadership", "Agile/Scrum", "communication", "planning"],
+    "courses": ["PMP Certification", "Agile Scrum Master"],
+    "description": "Plans, coordinates, and delivers IT projects on time and within budget."
+  },
+  {
+    "career": "Database Administrator",
+    "skills": ["SQL", "database design", "backup/recovery", "performance tuning"],
+    "courses": ["Database Management Systems", "Oracle/MySQL Administration"],
+    "description": "Manages and maintains an organization's databases for performance and security."
+  }
+]

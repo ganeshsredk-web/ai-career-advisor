@@ -11,7 +11,7 @@ import os
 import google.generativeai as genai
 
 genai.configure(api_key=os.environ.get("GEMINI_API_KEY"))
-_model = genai.GenerativeModel("gemini-2.5-flash")
+_model = genai.GenerativeModel("gemini-flash-lite-latest")
 
 SYSTEM_PROMPT = """You are a friendly, encouraging career advisor for university students.
 You are given some retrieved career profiles (skills, courses, description) that are

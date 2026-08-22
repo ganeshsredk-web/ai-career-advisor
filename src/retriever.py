@@ -18,7 +18,7 @@ import google.generativeai as genai
 
 DATA_PATH = "../data/careers.json"
 CACHE_PATH = "../data/embeddings_cache.json"
-EMBED_MODEL = "models/text-embedding-004"
+EMBED_MODEL = "models/gemini-embedding-001"
 
 genai.configure(api_key=os.environ.get("GEMINI_API_KEY"))
 

@@ -2,30 +2,16 @@
 advisor.py
 Takes the user's message + retrieved career context, builds a prompt,
 and calls the LLM to generate the career advice response.
+
+Uses Google Gemini's API. To switch to OpenAI or Claude, only
+_call_llm() needs to change — everything else stays the same.
 """
 
 import os
-from dotenv import load_dotenv
 import google.generativeai as genai
 
-# Load variables from .env
-load_dotenv()
-
-# Get Gemini API key
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
-
-# Check if API key exists
-if not GOOGLE_API_KEY:
-    raise ValueError(
-        "GOOGLE_API_KEY not found. Check your .env file."
-    )
-
-# Configure Gemini ONCE
-genai.configure(api_key=GOOGLE_API_KEY)
-
-# Create Gemini model
-_model = genai.GenerativeModel("gemini-3.6-flash")
-
+genai.configure(api_key=os.environ.get("GEMINI_API_KEY"))
+_model = genai.GenerativeModel("gemini-2.5-flash")
 
 SYSTEM_PROMPT = """You are a friendly, encouraging career advisor for university students.
 You are given some retrieved career profiles (skills, courses, description) that are
@@ -43,43 +29,48 @@ Your reply should:
 def build_context(retrieved_careers: list) -> str:
     """Format retrieved career entries into a text block for the prompt."""
     blocks = []
-
     for c in retrieved_careers:
         blocks.append(
             f"- {c['career']}: {c['description']} "
             f"Skills: {', '.join(c['skills'])}. "
             f"Courses: {', '.join(c['courses'])}."
         )
-
     return "\n".join(blocks)
 
 
 def _format_history(chat_history: list) -> str:
-    """Turn prior conversation into plain text."""
+    """Turn prior turns into plain text (Gemini has no 'system' role, so we
+    fold everything into one prompt for simplicity)."""
     lines = []
-
     for msg in chat_history:
         speaker = "Student" if msg["role"] == "user" else "Advisor"
         lines.append(f"{speaker}: {msg['content']}")
-
     return "\n".join(lines)
 
 
 def _call_llm(prompt: str) -> str:
-    response = _model.generate_content(prompt)
-    return response.text
+    try:
+        response = _model.generate_content(prompt)
+        return response.text
+    except Exception as e:
+        # Friendly fallback instead of crashing the whole app
+        return (
+            "Sorry, I'm having trouble reaching the AI service right now "
+            f"({type(e).__name__}). Please try again in a moment."
+        )
 
 
-def get_advice(
-    user_message: str,
-    retrieved_careers: list,
-    chat_history: list = None
-) -> str:
+MAX_HISTORY_TURNS = 5  # keep prompts from growing too large in long chats
 
+
+def get_advice(user_message: str, retrieved_careers: list, chat_history: list = None) -> str:
+    """
+    user_message: the latest thing the student typed
+    retrieved_careers: list of career dicts from CareerRetriever.retrieve()
+    chat_history: list of {"role": "user"/"assistant", "content": ...} from earlier turns
+    """
     context = build_context(retrieved_careers)
-
-    chat_history = chat_history or []
-
+    chat_history = (chat_history or [])[-MAX_HISTORY_TURNS * 2:]
     history_text = _format_history(chat_history)
 
     prompt = (

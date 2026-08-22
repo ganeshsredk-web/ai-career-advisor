@@ -58,5 +58,119 @@
     "skills": ["SQL", "database design", "backup/recovery", "performance tuning"],
     "courses": ["Database Management Systems", "Oracle/MySQL Administration"],
     "description": "Manages and maintains an organization's databases for performance and security."
+  },
+  {
+    "career": "Digital Marketing Specialist",
+    "skills": ["SEO", "content strategy", "social media", "Google Analytics"],
+    "courses": ["Digital Marketing Fundamentals", "Google Analytics Certification"],
+    "description": "Plans and runs online campaigns to grow brand awareness and drive sales."
+  },
+  {
+    "career": "Financial Analyst",
+    "skills": ["Excel", "financial modeling", "accounting", "forecasting"],
+    "courses": ["Financial Modeling & Valuation", "CFA Level 1 Prep"],
+    "description": "Analyzes financial data to guide investment and budgeting decisions."
+  },
+  {
+    "career": "Network Administrator",
+    "skills": ["networking", "Cisco", "troubleshooting", "server management"],
+    "courses": ["CCNA", "Network Fundamentals"],
+    "description": "Sets up and maintains an organization's computer networks and connectivity."
+  },
+  {
+    "career": "Product Manager",
+    "skills": ["roadmapping", "communication", "user research", "prioritization"],
+    "courses": ["Product Management Fundamentals", "Agile for Product Managers"],
+    "description": "Defines product strategy and works with teams to build features users need."
+  },
+  {
+    "career": "Game Developer",
+    "skills": ["C#", "Unity", "3D math", "problem-solving"],
+    "courses": ["Game Development with Unity", "Introduction to Game Design"],
+    "description": "Designs and builds interactive games for PC, console, or mobile platforms."
+  },
+  {
+    "career": "IT Support Specialist",
+    "skills": ["troubleshooting", "customer service", "hardware", "operating systems"],
+    "courses": ["CompTIA A+", "IT Helpdesk Fundamentals"],
+    "description": "Provides technical assistance and resolves hardware/software issues for users."
+  },
+  {
+    "career": "Business Intelligence (BI) Developer",
+    "skills": ["SQL", "Power BI", "Tableau", "data warehousing"],
+    "courses": ["Power BI Fundamentals", "Data Warehousing Concepts"],
+    "description": "Builds dashboards and reports that turn raw data into business insights."
+  },
+  {
+    "career": "Mobile App Developer",
+    "skills": ["Kotlin/Swift", "Flutter", "UI design", "APIs"],
+    "courses": ["Android/iOS App Development", "Cross-Platform Development with Flutter"],
+    "description": "Builds mobile applications for Android and iOS platforms."
+  },
+  {
+    "career": "DevOps Engineer",
+    "skills": ["CI/CD", "Docker", "Kubernetes", "scripting"],
+    "courses": ["DevOps Fundamentals", "Docker & Kubernetes Essentials"],
+    "description": "Automates and streamlines the software build, test, and deployment pipeline."
+  },
+  {
+    "career": "Human Resource Manager",
+    "skills": ["communication", "recruitment", "conflict resolution", "policy management"],
+    "courses": ["HR Management Fundamentals", "Organizational Behavior"],
+    "description": "Manages hiring, employee relations, and workplace policies within an organization."
+  },
+  {
+    "career": "Supply Chain Analyst",
+    "skills": ["logistics", "Excel", "forecasting", "process optimization"],
+    "courses": ["Supply Chain Management Fundamentals", "Operations Research Basics"],
+    "description": "Analyzes and improves the flow of goods, data, and finances across a supply chain."
+  },
+  {
+    "career": "Technical Writer",
+    "skills": ["writing", "research", "attention to detail", "basic technical knowledge"],
+    "courses": ["Technical Writing Fundamentals", "Documentation for Software Products"],
+    "description": "Creates clear manuals, guides, and documentation for technical products."
+  },
+  {
+    "career": "E-commerce Manager",
+    "skills": ["online retail platforms", "marketing", "analytics", "inventory management"],
+    "courses": ["E-commerce Management", "Digital Marketing Basics"],
+    "description": "Runs and grows an online store, from product listings to sales performance."
+  },
+  {
+    "career": "Systems Analyst",
+    "skills": ["requirements analysis", "process modeling", "communication", "basic coding"],
+    "courses": ["Systems Analysis & Design", "Business Process Modeling"],
+    "description": "Studies an organization's systems and recommends technology-based improvements."
+  },
+  {
+    "career": "Data Engineer",
+    "skills": ["Python", "SQL", "ETL pipelines", "big data tools"],
+    "courses": ["Data Engineering Fundamentals", "Apache Spark Basics"],
+    "description": "Builds and maintains the infrastructure that moves and processes large-scale data."
+  },
+  {
+    "career": "Blockchain Developer",
+    "skills": ["Solidity", "cryptography basics", "smart contracts", "Python/JavaScript"],
+    "courses": ["Blockchain Fundamentals", "Smart Contract Development"],
+    "description": "Builds decentralized applications and smart contracts on blockchain platforms."
+  },
+  {
+    "career": "Quality Assurance (QA) Engineer",
+    "skills": ["test planning", "automation testing", "attention to detail", "basic scripting"],
+    "courses": ["Software Testing Fundamentals", "Test Automation with Selenium"],
+    "description": "Tests software to catch bugs and ensure products meet quality standards before release."
+  },
+  {
+    "career": "Entrepreneur / Startup Founder",
+    "skills": ["business planning", "leadership", "adaptability", "networking"],
+    "courses": ["Entrepreneurship Fundamentals", "Lean Startup Methodology"],
+    "description": "Builds and runs a new business venture, from idea validation to growth."
+  },
+  {
+    "career": "Social Media Manager",
+    "skills": ["content creation", "copywriting", "analytics", "trend awareness"],
+    "courses": ["Social Media Marketing", "Content Strategy Fundamentals"],
+    "description": "Manages a brand's social media presence, content calendar, and audience engagement."
   }
 ]
